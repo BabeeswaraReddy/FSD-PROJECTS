@@ -1,0 +1,113 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-outer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f9e3de 60%, #ffe56b 100%);
+  box-sizing: border-box;
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.goddess-image {
+  width: 320px;
+  border: 6px solid #c94e4e;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #aa4d4d;
+  animation: fadeIn 2s;
+  margin: 16px 0;
+}
+
+canvas {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  background: #fff8e7;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #fdd835;
+}
+
+.story-container {
+  white-space: pre-wrap;  /* preserve line breaks */
+  font-size: 1.2em;
+  padding: 15px;
+  background: #fff8e7;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #fdd835;
+  margin: 20px 0;
+  max-width: 600px;
+  text-align: center;
+}
+
+form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+input, button {
+  font-size: 1em;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #c94e4e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.app-outer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f9e3de 60%, #ffe56b 100%);
+}
+
+.row-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 36px;
+}
+.next-day-btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 1.1em;
+  background-color: #ba2d65;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-day-btn:hover {
+  background-color: #c94e7b;
+}
+
+/* Keep your other styling (canvas, .goddess-image, .story-container, etc.) */
